@@ -6,6 +6,6 @@ function agregartarea() {
     }
     let li = document.createElement("li");
     li.textContent = tarea;
-    document.getElementById("listatareas").appendChild(li);
+    document.getElementById("listatareas").prepend(li);
     document.getElementById("nuevatarea").value = "";
 }
