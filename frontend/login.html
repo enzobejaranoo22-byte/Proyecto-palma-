@@ -16,9 +16,7 @@
     </header>
 
     <nav>
-        <a href="index.html">Inicio</a>
         <a href="login.html">Login</a>
-        <a href="tareas.html">Tareas</a>
 
     </nav>
 
@@ -30,14 +28,35 @@
 
             <form>
 
-                <input type="email" placeholder="Correo">
+                <input type="email"
+                id="email" 
+                placeholder="Correo electronico">
                 <br><br>
 
-                <input type="password" placeholder="Contraseña">
+                <input type="password" 
+                id="password"
+                placeholder="Contraseña">
+                <br><br>
+                
+                <a href="tareas.html">
+               
+                <p>Ingresar</p>
+              
+                </a>
                 <br><br>
 
-                <button>Ingresar</button>
+                <a href="registro.html">
+                    Crear cuenta nueva 
+                </a>
 
+                <br><br>
+
+                <a href="#"
+                onclick="recuperarPassword()">
+            Olvide mi Contraseña
+            </a>
+
+            <p id ="Mensaje"></p>
             </form>
 
         </section>
@@ -48,6 +67,7 @@
         <p>7mo Año Programación</p>
     </footer>
 
+    <script src ="login.js"></script>
 </body>
 
 </html>

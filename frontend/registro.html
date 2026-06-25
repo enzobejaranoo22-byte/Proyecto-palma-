@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+<title>Registro</title>
+</head>
+
+<body>
+
+<header>
+<h1>Proyecto Palma</h1>
+</header>
+
+<nav>
+<a href="index.html">Inicio</a>
+<a href="login.html">Login</a>
+<a href="tareas.html">Tareas</a>
+</nav>
+
+<main>
+
+<section>
+
+<h2>Crear Cuenta</h2>
+
+<form onsubmit="return false;">
+
+<input type="email"
+id="nuevoEmail"
+placeholder="Ingrese correo">
+
+<br><br>
+
+
+<input type="password"
+id="nuevaPassword"
+placeholder="Crear contraseña">
+
+<br><br>
+
+<button onclick="registrar()">
+Registrarse
+</button>
+
+<p id="mensajeRegistro"></p>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+<p>7mo año programación</p>
+</footer>
+
+<script src="registro.js"></script>
+
+</body>
+</html>
