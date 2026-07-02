@@ -4,41 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tareas</title>
+    <title>Proyecto Palma - Mis Tareas</title>
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Proyecto Palma</h1>
-    </header>
+<header>
 
-    <nav>
-        <a href="tareas.html">Tareas</a>
+    <h1>📋 Proyecto Palma</h1>
+    <p>Organizador de tareas</p>
 
-        <h2>MIS TAREAS</h2>
-            <input type="text" id="nuevatarea">
-            <button onclick="agregartarea()">agregar </button>
-            <ul id="listatareas"> </ul>
-            <script src="js/tareas.js"></script>
-    </nav>
+</header>
 
-    <main>
+<nav>
 
-        <section>
+    <a href="index.html">Inicio</a>
+    <a href="tareas.html">Mis tareas</a>
 
-            <h2>Lista de tareas</h2>
-            <h3>Para agregar o comenzar con tu lista de tareas, escribi en la barra, y una vez finalizado toca en agregar para poder cargar tu tarea.</h3>
+</nav>
 
-        </section>
+<main>
 
-    </main>
+<section class="panelPrincipal">
 
-    <footer>
-        <p>7mo Año Programación</p>
-    </footer>
+<h2>Mis tareas</h2>
+
+<div class="agregar">
+
+    <input
+        type="text"
+        id="nuevatarea"
+        placeholder="Escribí una tarea">
+
+    <input
+        type="date"
+        id="fechatarea">
+
+    <button onclick="agregartarea()">
+        Agregar
+    </button>
+
+</div>
+
+</section>
+
+<section class="contenedor">
+
+<div class="calendario">
+
+<h2>📅 Calendario</h2>
+
+<input
+type="date"
+id="calendario">
+
+<p class="textoCalendario">
+
+Seleccioná una fecha para organizar tus actividades.
+
+</p>
+
+</div>
+
+<div class="recordatorios">
+
+<h2>🔔 Recordatorios</h2>
+
+<ul id="recordatorios">
+
+</ul>
+
+</div>
+
+</section>
+
+<section class="lista">
+
+<h2>Lista de tareas</h2>
+
+<ul id="listatareas">
+
+</ul>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+
+7° Año Programación
+
+</p>
+
+</footer>
+
+<script src="js/tareas.js"></script>
 
 </body>
+
 </html>

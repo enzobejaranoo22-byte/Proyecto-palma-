@@ -26,32 +26,33 @@
 
             <h2>Iniciar Sesión</h2>
 
-            <form>
+            <form action="tareas.html">
 
                 <input type="email"
                 id="email" 
-                placeholder="Correo electronico">
+                placeholder="Correo electronico" required>
+                
                 <br><br>
 
                 <input type="password" 
                 id="password"
-                placeholder="Contraseña">
+                placeholder="Contraseña"
+                required>
                 <br><br>
+
+                 <button type="submit">
+                Ingresar
+               </button>
                 
-                <a href="tareas.html">
-               
-                <p>Ingresar</p>
-              
-                </a>
                 <br><br>
 
-                <a href="registro.html">
-                    Crear cuenta nueva 
-                </a>
+                 <a href="registro.html">
+           Crear Cuenta
+            </a>
 
                 <br><br>
 
-                <a href="#"
+                <a href=""
                 onclick="recuperarPassword()">
             Olvide mi Contraseña
             </a>
